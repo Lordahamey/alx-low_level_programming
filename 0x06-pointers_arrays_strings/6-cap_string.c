@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 
 /**
 * cap_string - a code that capitalizes all words in a string
@@ -6,11 +6,10 @@ include "main.h"
 * @s: string
 * Return: address of s
 */
-
 char *cap_string(char *s)
 {
 	int i = 0, j;
-	char a[] = " \t\n,;.!?\"(){}";
+	char a[] = "\t\n,;.!?\"(){}";
 
 	while (*(s + i))
 	{
